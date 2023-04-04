@@ -1,145 +1,145 @@
 {
   "configurations": [
-      {
-          "name": "Start fiori_report_278",
-          "type": "node",
-          "request": "launch",
-          "runtimeExecutable": "npx",
-          "cwd": "${workspaceFolder}/fiori_report_278",
-          "windows": {
-              "runtimeExecutable": "npx.cmd"
-          },
-          "runtimeArgs": [
-              "fiori",
-              "run"
-          ],
-          "args": [
-              "--open",
-              "test/flpSandbox.html#brcomclientegestaofiorireport278-display"
-          ],
-          "console": "internalConsole",
-          "internalConsoleOptions": "openOnSessionStart",
-          "outputCapture": "std",
-          "port": 9229,
-          "env": {
-              "DEBUG": "--inspect",
-              "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-              "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
-          }
+    {
+      "name": "Start fiori_report_278",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "cwd": "${workspaceFolder}/fiori_report_278",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
       },
-      {
-          "name": "Start fiori_report_278 Mock",
-          "type": "node",
-          "request": "launch",
-          "cwd": "${workspaceFolder}/fiori_report_278",
-          "runtimeExecutable": "npx",
-          "windows": {
-              "runtimeExecutable": "npx.cmd"
-          },
-          "runtimeArgs": [
-              "fiori",
-              "run"
-          ],
-          "args": [
-              "--config",
-              "./ui5-mock.yaml",
-              "--open",
-              "test/flpSandbox.html#brcomclientegestaofiorireport278-display"
-          ],
-          "console": "internalConsole",
-          "internalConsoleOptions": "openOnSessionStart",
-          "outputCapture": "std",
-          "port": 9229,
-          "env": {
-              "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-              "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
-          }
-      },
-      {
-          "name": "Start fiori_report_278 Local",
-          "type": "node",
-          "request": "launch",
-          "cwd": "${workspaceFolder}/fiori_report_278",
-          "runtimeExecutable": "npx",
-          "windows": {
-              "runtimeExecutable": "npx.cmd"
-          },
-          "runtimeArgs": [
-              "fiori",
-              "run"
-          ],
-          "args": [
-              "--config",
-              "./ui5-local.yaml",
-              "--open",
-              "test/flpSandbox.html#brcomclientegestaofiorireport278-display"
-          ],
-          "console": "internalConsole",
-          "internalConsoleOptions": "openOnSessionStart",
-          "outputCapture": "std",
-          "port": 9229,
-          "env": {
-              "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-              "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
-          }
-      },
-      // Configuração Padrão
-      {
-          "name": "Start fiori_report_278",
-          "type": "node",
-          "request": "launch",
-          "runtimeExecutable": "npx",
-          "cwd": "${workspaceFolder}/fiori_report_278",
-          "windows": {
-              "runtimeExecutable": "npx.cmd"
-          },
-          "runtimeArgs": [
-              "fiori",
-              "run"
-          ],
-          "args": [
-              "--open",
-              "test/flpSandbox.html#brcomgestaofiorireport278-display"
-          ],
-          "console": "internalConsole",
-          "internalConsoleOptions": "openOnSessionStart",
-          "outputCapture": "std",
-          "port": 9229,
-          "env": {
-              "DEBUG": "--inspect",
-              "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-              "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
-          }
-      },
-      // Configuração Mock
-      {
-          "name": "Start fiori_report_278 Mock",
-          "type": "node",
-          "request": "launch",
-          "cwd": "${workspaceFolder}/fiori_report_278",
-          "runtimeExecutable": "npx",
-          "windows": {
-              "runtimeExecutable": "npx.cmd"
-          },
-          "runtimeArgs": [
-              "fiori",
-              "run"
-          ],
-          "args": [
-              "--config",
-              "./ui5-mock.yaml",
-              "--open",
-              "test/flpSandbox.html#brcomgestaofiorireport278-display"
-          ],
-          "console": "internalConsole",
-          "internalConsoleOptions": "openOnSessionStart",
-          "outputCapture": "std",
-          "port": 9229,
-          "env": {
-              "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
-              "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
-          }
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#brcomclientegestaofiorireport278-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
       }
+    },
+    {
+      "name": "Start fiori_report_278 Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/fiori_report_278",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#brcomclientegestaofiorireport278-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
+      }
+    },
+    {
+      "name": "Start fiori_report_278 Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/fiori_report_278",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#brcomclientegestaofiorireport278-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
+      }
+    },
+    // Configuração Padrão
+    {
+      "name": "Start fiori_report_278",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "cwd": "${workspaceFolder}/fiori_report_278",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#brcomgestaofiorireport278-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
+      }
+    },
+    // Configuração Mock
+    {
+      "name": "Start fiori_report_278 Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/fiori_report_278",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#brcomgestaofiorireport278-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-client=100&sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiori_report_278\"}"
+      }
+    }
   ],
   "compounds": [],
   "version": "0.2.0"
