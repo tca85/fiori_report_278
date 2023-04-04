@@ -1,32 +1,34 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar" controllerName="br.com.cliente.gestao.fiorireport278.controller.DataBinding" displayBlock="true">
 	<Page id="page" title="{i18n>title}">
 		<content>
-				<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+			<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+				<headerToolbar>
+					<Toolbar id="toolbar1">
+						<Title text="Header" id="headerTitle"/>
+						<ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+						<Button id="_IDGenButton1" icon="sap-icon://settings"/>
+					</Toolbar>
+				</headerToolbar>
 
-				    <headerToolbar>
-
-				        <Toolbar id="toolbar1">
-
-				            <Title text="Header"/>
-
-				            <ToolbarSpacer/>
-
-				            <Button icon="sap-icon://settings"/>
-
-				            </Toolbar>
-
-				    </headerToolbar>
-
-				    <content>
-
-				        <Text text="Panel Content" id="text2"/>
-
-				        
-
-				    </content>
-
-				    </Panel>
-
+				<content>
+					<List noDataText="Drop list items here" id="list0" items="{/Products}">
+					<items>
+					    <StandardListItem type="Navigation" title="List Item" description="Description text" icon="sap-icon://picture" id="item0"/>
+					</items>
+					</List>
 				</content>
-			</Page>
-		</mvc:View>
+
+				<infoToolbar>
+					<Toolbar width="100%" id="toolbarInfo">
+						<content>
+							<Text xmlns="sap.m" text="Informação Adicional List" id="text0"/>
+						</content>
+					</Toolbar>
+				</infoToolbar>
+			</Panel>
+
+			<Button xmlns="sap.m" text="Alterar o texto do obj Header" press="onClicaSet" id="button1" icon="sap-icon://activate"/>
+
+		</content>
+	</Page>
+</mvc:View>
