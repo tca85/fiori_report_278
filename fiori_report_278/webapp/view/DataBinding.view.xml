@@ -27,8 +27,6 @@
 				</infoToolbar>
 			</Panel>
 
-			<Button xmlns="sap.m" text="Alterar o texto do obj Header" press="onClicaSet" id="button1" icon="sap-icon://activate"/>
-
 		</content>
 	</Page>
 </mvc:View>
