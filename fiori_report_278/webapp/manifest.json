@@ -112,7 +112,7 @@
       }
     },
     "rootView": {
-      "viewName": "br.com.cliente.gestao.fiorireport278.view.App",
+      "viewName": "br.com.cliente.gestao.fiorireport278.view.DataBinding",
       "type": "XML",
       "async": true,
       "id": "App"
