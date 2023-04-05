@@ -1,5 +1,5 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar" controllerName="br.com.cliente.gestao.fiorireport278.controller.Lista" displayBlock="true">
-	<Page id="page" title="{i18n>title}">
+	<Page id="Lista" title="{i18n>title}">
 		<content>
 			<SemanticPage xmlns="sap.f.semantic" showFooter="true" id="pageLista" headerPinnable="true" toggleHeaderOnTitleClick="true" preserveHeaderStateOnScroll="false" titleAreaShrinkRatio="1:1.6:1.6">
 				<titleHeading>
