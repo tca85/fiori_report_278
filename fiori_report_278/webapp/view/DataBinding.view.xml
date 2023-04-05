@@ -1,49 +1,48 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar" controllerName="br.com.cliente.gestao.fiorireport278.controller.DataBinding" displayBlock="true">
-	<Page id="DataBinding" title="{i18n>title}">
-		<content>
-			<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
-				<headerToolbar>
-					<Toolbar id="toolbar1">
-						<Title text="Model via serviço OData" id="headerTitle"/>
-						<ToolbarSpacer id="_IDGenToolbarSpacer1"/>
-						<Button id="_IDGenButton1" icon="sap-icon://settings"/>
-					</Toolbar>
-				</headerToolbar>
-
-				<content>
-					<List noDataText="Sem produtos disponíveis" id="list0" items="{/Products}">
-					<items>
-					    <StandardListItem type="Navigation" title="{ProductId}" description="{Name}" icon="sap-icon://picture" id="item0"/>
-					</items>
-					</List>
-					<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panelJSONModel">
-					    <headerToolbar>
-					        <Toolbar id="toolbar1_1680716664126">
-					            <Title text="Header" id="headerTitle2"/>
-					            <ToolbarSpacer id="_IDGenToolbarSpacer2"/>
-					            <Button icon="sap-icon://settings" id="_IDGenButton2"/>
-					            </Toolbar>
-					        
-					    </headerToolbar>
-					    <content>
-					        <List noDataText="Drop list items here" id="list0_1680717406738" items="{Model_JSON_Produtos>/Products}">
-					            <items>
-					                <StandardListItem type="Navigation" title="{Model_JSON_Produtos>ProductName}" description="{Model_JSON_Produtos>Title}" icon="sap-icon://picture" id="item0_1680717406738"/>
-					            </items>
-					        </List>
-					    </content>
-					    </Panel>
-				</content>
-
-				<infoToolbar>
-					<Toolbar width="100%" id="toolbarInfo">
-						<content>
-							<Text xmlns="sap.m" text="Informação Adicional List" id="text0"/>
-						</content>
-					</Toolbar>
-				</infoToolbar>
-			</Panel>
-
-		</content>
-	</Page>
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar"
+  controllerName="br.com.cliente.gestao.fiorireport278.controller.DataBinding" displayBlock="true">
+  <Page id="DataBinding" title="{i18n>title}">
+    <content>
+      <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+        <headerToolbar>
+          <Toolbar id="toolbar1">
+            <Title text="Model via serviço OData" id="headerTitle" />
+            <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+            <Button id="_IDGenButton1" icon="sap-icon://settings" />
+          </Toolbar>
+        </headerToolbar>
+        <content>
+          <List noDataText="Sem produtos disponíveis" id="list0" items="{/Products}">
+            <items>
+              <StandardListItem type="Navigation" title="{ProductId}" description="{Name}" icon="sap-icon://picture"
+                id="item0" />
+            </items>
+          </List>
+          <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panelJSONModel">
+            <headerToolbar>
+              <Toolbar id="toolbar1_1680716664126">
+                <Title text="Header" id="headerTitle2" />
+                <ToolbarSpacer id="_IDGenToolbarSpacer2" />
+                <Button icon="sap-icon://settings" id="_IDGenButton2" />
+              </Toolbar>
+            </headerToolbar>
+            <content>
+              <List noDataText="Drop list items here" id="list0_1680717406738" items="{Model_JSON_Produtos>/Products}">
+                <items>
+                  <StandardListItem type="Navigation" title="{Model_JSON_Produtos>ProductName}"
+                    description="{Model_JSON_Produtos>Title}" icon="sap-icon://picture" id="item0_1680717406738" />
+                </items>
+              </List>
+            </content>
+          </Panel>
+        </content>
+        <infoToolbar>
+          <Toolbar width="100%" id="toolbarInfo">
+            <content>
+              <Text xmlns="sap.m" text="Informação Adicional List" id="text0" />
+            </content>
+          </Toolbar>
+        </infoToolbar>
+      </Panel>
+    </content>
+  </Page>
 </mvc:View>
