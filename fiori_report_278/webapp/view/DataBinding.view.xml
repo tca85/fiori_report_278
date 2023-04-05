@@ -21,7 +21,7 @@
           <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panelJSONModel">
             <headerToolbar>
               <Toolbar id="toolbar1_1680716664126">
-                <Title text="Header" id="headerTitle2" />
+                <Title text="Model via arquivo JSON (Produtos)" id="headerTitle2" />
                 <ToolbarSpacer id="_IDGenToolbarSpacer2" />
                 <Button icon="sap-icon://settings" id="_IDGenButton2" />
               </Toolbar>
@@ -38,7 +38,7 @@
           <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0_1680720251589">
             <headerToolbar>
               <Toolbar id="toolbar1_1680720251588">
-                <Title text="Header" id="txtPanel3" />
+                <Title text="Model via arquivo JSON (Região)" id="txtPanel3" />
                 <ToolbarSpacer id="tb3" />
                 <Button icon="sap-icon://settings" id="btn3" />
               </Toolbar>
