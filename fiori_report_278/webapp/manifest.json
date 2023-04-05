@@ -95,9 +95,16 @@
       "routes": [
         {
           "name": "RouteLista",
-          "pattern": ":?query:",
+          "pattern": "Lista",
           "target": [
             "TargetLista"
+          ]
+        },
+        {
+          "name": "RouteDataBinding",
+          "pattern": "",
+          "target": [
+            "DataBinding"
           ]
         }
       ],
@@ -108,11 +115,18 @@
           "clearControlAggregation": false,
           "viewId": "Lista",
           "viewName": "Lista"
-        }
+        },
+        "DataBinding": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "DataBinding",
+          "viewName": "DataBinding"
+        }        
       }
     },
     "rootView": {
-      "viewName": "br.com.cliente.gestao.fiorireport278.view.DataBinding",
+      "viewName": "br.com.cliente.gestao.fiorireport278.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
