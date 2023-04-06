@@ -9,26 +9,12 @@
 					<headerContent>
 						<fb:FilterBar id="filterbar" reset="onReset" search="onSearch" useToolbar="false" showGoOnFB="true">
 							<fb:filterGroupItems>
-								<fb:FilterGroupItem xmlns:sap.m="sap.m" 
-                                                    label="Produto ID" 
-                                                    name="Produto ID" 
-                                                    labelTooltip="Insira o código do produto" 
-                                                    visibleInFilterBar="true" 
-                                                    groupTitle="Principal"
-                                                    groupName="Principal" 
-                                                    id="item0">
+								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="Produto ID" name="Produto ID" labelTooltip="Insira o código do produto" visibleInFilterBar="true" groupTitle="Principal" groupName="Principal" id="item0">
 									<fb:control>
 										<sap.m:Input width="100%" placeholder="Insira o código do produto" id="input0"/>
 									</fb:control>
 								</fb:FilterGroupItem>
-								<fb:FilterGroupItem xmlns:sap.m="sap.m" 
-                                                    label="Nome do Produto" 
-                                                    name="Filter Item" 
-                                                    labelTooltip="Insira o nome do produto" 
-                                                    visibleInFilterBar="true" 
-                                                    groupTitle="Principal" 
-                                                    groupName="Principal 2" 
-                                                    id="item0_1680141251907">
+								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="Nome do Produto" name="Filter Item" labelTooltip="Insira o nome do produto" visibleInFilterBar="true" groupTitle="Principal" groupName="Principal 2" id="item0_1680141251907">
 								    <fb:control>
 								        <sap.m:Input width="100%" placeholder="Insira o código do produto" id="input0_1680141251907"/>
 								    </fb:control>
@@ -44,29 +30,66 @@
 						<Title xmlns="sap.m" text="Relatório de Produtos por Status" id="title0_1680138668280"/>
 						</titleSnappedContent>
 					<content>
-					    <sap.m:Table noDataText="Drop column list items here and columns in the area above" xmlns:sap.m="sap.m" id="table1">
+					    <sap.m:Table xmlns:sap.m="sap.m" noDataText="Drop column list items here and columns in the area above" id="table1" items="{/Products}">
 					        <sap.m:items>
 					            <sap.m:ColumnListItem type="Active" id="item1">
-					                <sap.m:cells>
-					                    <sap.m:Text text="Row 1 Cell 1" id="text4"/>
-					                    <sap.m:Text text="Row 1 Cell 2" id="text5"/>
-					                    <sap.m:Text text="Row 1 Cell 3" id="text6"/></sap.m:cells>
+					            <sap.m:cells>
+					                <sap.ui.core:Icon src="sap-icon://product" size="3em" xmlns:sap.ui.core="sap.ui.core" id="icon0"/>
+					                <Text xmlns="sap.m" text="{ProductId}" id="text15"/>
+					                <ObjectIdentifier xmlns="sap.m" title="{Name}" text="{Description}" id="identifier0"/>
+					                <Text xmlns="sap.m" text="{Category}" id="text17"/>
+					                <Text xmlns="sap.m" text="{SupplierId}" id="text18"/>
+					                <Text xmlns="sap.m" text="{MeasureUnit}" id="text19"/>
+					                <ObjectNumber xmlns="sap.m" number="{Price}" unit="{CurrencyCode}" id="number0" state="Success"/>
+					                <ObjectStatus xmlns="sap.m" text="{Status}" state="Warning" id="status0" icon="sap-icon://alert"/>
+					                <Text xmlns="sap.m" text="{CreateDat}" id="text20"/>
+					            </sap.m:cells>
 					            </sap.m:ColumnListItem>
 					        </sap.m:items>
 					        <sap.m:columns>
 					            <sap.m:Column id="column0">
 					                <sap.m:header>
-					                    <sap.m:Label text="Header 1" id="label0"/>
+					                    <sap.m:Label id="label0" text="Imagem"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column1">
 					                <sap.m:header>
-					                    <sap.m:Label text="Header 2" id="label1"/>
+					                    <sap.m:Label text="Id produto" id="label1"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column2">
 					                <sap.m:header>
-					                    <sap.m:Label text="Header 3" id="label2"/>
+					                    <sap.m:Label text="Nome" id="label2"/>
+					                </sap.m:header>
+					            </sap.m:Column>
+					            <sap.m:Column id="column0_1680743873838">
+					                <sap.m:header>
+					                    <sap.m:Text text="Categoria" id="text9"/>
+					                </sap.m:header>
+					            </sap.m:Column>
+					            <sap.m:Column id="column1_1680743891001">
+					                <sap.m:header>
+					                    <sap.m:Text text="Id do fornecedor" id="text10"/>
+					                </sap.m:header>
+					            </sap.m:Column>
+					            <sap.m:Column id="column2_1680743895316">
+					                <sap.m:header>
+					                    <sap.m:Text text="Unid. medida" id="text11"/>
+					                </sap.m:header>
+					            </sap.m:Column>
+					            <sap.m:Column id="column3">
+					                <sap.m:header>
+					                    <sap.m:Text text="Preço" id="text12"/>
+					                </sap.m:header>
+					            </sap.m:Column>
+					            <sap.m:Column id="column4">
+					                <sap.m:header>
+					                    <sap.m:Text text="Status" id="text13"/>
+					                </sap.m:header>
+					            </sap.m:Column>
+					            <sap.m:Column id="column5">
+					                <sap.m:header>
+					                    <sap.m:Text text="Data de criação" id="text14"/>
 					                </sap.m:header>
 					            </sap.m:Column></sap.m:columns></sap.m:Table>
 					</content>

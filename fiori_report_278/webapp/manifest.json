@@ -95,14 +95,14 @@
       "routes": [
         {
           "name": "RouteLista",
-          "pattern": "Lista",
+          "pattern": "",
           "target": [
             "TargetLista"
           ]
         },
         {
           "name": "RouteDataBinding",
-          "pattern": "",
+          "pattern": "DataBinding",
           "target": [
             "DataBinding"
           ]
