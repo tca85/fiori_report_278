@@ -8,6 +8,9 @@ sap.ui.define(
 
     return BaseController.extend("br.com.cliente.gestao.fiorireport278.controller.i18n", {
       onInit() {
+        //this.changeLanguage();
+        //sap-language=pt-BR
+        //sap-language=en
       },
 
       /**
@@ -23,6 +26,20 @@ sap.ui.define(
 
         var sMessage = oResourceBundle.getText("msgConfirmation", [customer, city, state]);
         MessageBox.confirm(sMessage);
+      },
+
+      /**
+       * Change the app language
+       */
+      changeLanguage: function () {
+        var i18nModel = new sap.ui.model.resource.ResourceModel({
+          bundleUrl: "i18n/i18n.properties",
+          bundleLocale: "fr",
+          bundleName: "br.com.cliente.gestao.fiorireport278.i18n.i18n_fr"
+        });
+
+        // replaces the default i18n with i18n_fr. The name must be i18n because it's in the manifest bundle property
+        this.getView().setModel(i18nModel, "i18n");
       }
 
     });

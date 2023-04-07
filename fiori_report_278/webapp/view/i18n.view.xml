@@ -7,7 +7,7 @@
                               <Label text="{i18n>lblCustomer}" id="label0" />
                               <Input width="100%" id="inpCustomer" placeholder="{i18n>placeholderCustomer}" />
                               <Label text="{i18n>lblAddress}" id="label1" />
-                              <Input width="100%" id="inpAddress" placeholder="{i18n>placeholderCustomerAddresss}" />
+                              <Input width="100%" id="inpAddress" placeholder="{i18n>placeholderCustomerAddress}" />
                               <Label text="{i18n>lblCustomerCity}" width="100%" id="label2" />
                               <Input xmlns="sap.m" id="inpCity" placeholder="{i18n>placeholderCustomerCity}" />
                               <Label text="{i18n>lblCustomerState}" width="100%" id="label3" />
