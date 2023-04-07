@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar"
+  controllerName="br.com.cliente.gestao.fiorireport278.controller.i18n" displayBlock="true" id="_controlleri18n">
+  <Page id="i18n" title="{i18n>title}">
+    <content>
+     
+    </content>
+  </Page>
+</mvc:View>

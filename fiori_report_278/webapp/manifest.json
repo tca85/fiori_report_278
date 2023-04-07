@@ -95,7 +95,7 @@
       "routes": [
         {
           "name": "RouteLista",
-          "pattern": "",
+          "pattern": "Lista",
           "target": [
             "TargetLista"
           ]
@@ -104,9 +104,16 @@
           "name": "RouteDataBinding",
           "pattern": "DataBinding",
           "target": [
-            "DataBinding"
+            "TargetDataBinding"
           ]
-        }
+        },
+        {
+          "name": "RouteI18n",
+          "pattern": "",
+          "target": [
+            "TargetI18N"
+          ]
+        }  
       ],
       "targets": {
         "TargetLista": {
@@ -116,13 +123,20 @@
           "viewId": "Lista",
           "viewName": "Lista"
         },
-        "DataBinding": {
+        "TargetDataBinding": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "DataBinding",
           "viewName": "DataBinding"
-        }        
+        },
+        "TargetI18N": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "i18n",
+          "viewName": "i18n"
+        }         
       }
     },
     "rootView": {
