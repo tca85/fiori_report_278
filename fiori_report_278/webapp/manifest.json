@@ -95,7 +95,7 @@
       "routes": [
         {
           "name": "RouteLista",
-          "pattern": "Lista",
+          "pattern": "",
           "target": [
             "TargetLista"
           ]
@@ -109,7 +109,7 @@
         },
         {
           "name": "RouteI18n",
-          "pattern": "",
+          "pattern": "I18n",
           "target": [
             "TargetI18N"
           ]

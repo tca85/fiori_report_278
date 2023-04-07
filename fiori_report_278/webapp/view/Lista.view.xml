@@ -3,20 +3,19 @@
 		<content>
 			<SemanticPage xmlns="sap.f.semantic" showFooter="true" id="pageLista" headerPinnable="true" toggleHeaderOnTitleClick="true" preserveHeaderStateOnScroll="false" titleAreaShrinkRatio="1:1.6:1.6">
 				<titleHeading>
-					<m:Title xmlns:m="sap.m" text="Relatório de Produtos" id="title0"/>
+					<m:Title xmlns:m="sap.m" text="{i18n>headingTitle}" id="title0"/>
 					</titleHeading>
-					<!--Vamos ter as opções de filtros-->
 					<headerContent>
 						<fb:FilterBar id="filterbar" reset="onReset" search="onSearch" useToolbar="false" showGoOnFB="true">
 							<fb:filterGroupItems>
-								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="Produto ID" name="Produto ID" labelTooltip="Insira o código do produto" visibleInFilterBar="true" groupTitle="Principal" groupName="Principal" id="item0">
+								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="{i18n>fgItemProductID}" labelTooltip="{i18n>fgItemProductTooltip}" visibleInFilterBar="true" groupTitle="{i18n>fgItemProductGroup}" name="Product ID" groupName="Principal" id="fgItemProductGroup">
 									<fb:control>
-										<sap.m:Input width="100%" placeholder="Insira o código do produto" id="input0"/>
+										<sap.m:Input width="100%" placeholder="{i18n>fgItemProductPlaceholder}" id="inpProductID"/>
 									</fb:control>
 								</fb:FilterGroupItem>
-								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="Nome do Produto" name="Filter Item" labelTooltip="Insira o nome do produto" visibleInFilterBar="true" groupTitle="Principal" groupName="Principal 2" id="item0_1680141251907">
+								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="{i18n>fgItemProductName}" labelTooltip="{i18n>fgItemProductNameTooltip}" visibleInFilterBar="true" groupTitle="{i18n>fgItemProductGroup}" name="Filter Item" groupName="Principal" id="fgItemProductName">
 								    <fb:control>
-								        <sap.m:Input width="100%" placeholder="Insira o código do produto" id="input0_1680141251907"/>
+								        <sap.m:Input width="100%" placeholder="{i18n>fgItemProductNamePlaceholder}" id="inpProductName"/>
 								    </fb:control>
 								</fb:FilterGroupItem>
 							</fb:filterGroupItems>
@@ -27,14 +26,14 @@
 					<titleCustomIconActions/>
 					<footerCustomActions/>
 					<titleSnappedContent>
-						<Title xmlns="sap.m" text="Relatório de Produtos por Status" id="title0_1680138668280"/>
+						<Title xmlns="sap.m" text="{i18n>headingTitleSnappedContent}" id="title0_1680138668280"/>
 						</titleSnappedContent>
 					<content>
-					    <sap.m:Table xmlns:sap.m="sap.m" noDataText="Drop column list items here and columns in the area above" id="table1" items="{/Products}">
+					    <sap.m:Table xmlns:sap.m="sap.m" noDataText="{i18n>tbNoData}" id="table1" items="{/Products}">
 					        <sap.m:items>
 					            <sap.m:ColumnListItem type="Active" id="item1">
 					            <sap.m:cells>
-					                <sap.ui.core:Icon src="sap-icon://product" size="3em" xmlns:sap.ui.core="sap.ui.core" id="icon0"/>
+					                <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://product" size="3em" id="icon0"/>
 					                <Text xmlns="sap.m" text="{ProductId}" id="text15"/>
 					                <ObjectIdentifier xmlns="sap.m" title="{Name}" text="{Description}" id="identifier0"/>
 					                <Text xmlns="sap.m" text="{Category}" id="text17"/>
@@ -49,50 +48,50 @@
 					        <sap.m:columns>
 					            <sap.m:Column id="column0">
 					                <sap.m:header>
-					                    <sap.m:Label id="label0" text="Imagem"/>
+					                    <sap.m:Label id="label0" text="{i18n>tbColumnLogo}"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column1">
 					                <sap.m:header>
-					                    <sap.m:Label text="Id produto" id="label1"/>
+					                    <sap.m:Label text="{i18n>tbColumnProductID}" id="label1"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column2">
 					                <sap.m:header>
-					                    <sap.m:Label text="Nome" id="label2"/>
+					                    <sap.m:Label text="{i18n>tbColumnName}" id="label2"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column0_1680743873838">
 					                <sap.m:header>
-					                    <sap.m:Text text="Categoria" id="text9"/>
+					                    <sap.m:Text text="{i18n>tbColumnCategory}" id="text9"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column1_1680743891001">
 					                <sap.m:header>
-					                    <sap.m:Text text="Id do fornecedor" id="text10"/>
+					                    <sap.m:Text text="{i18n>tbColumnSupplierID}" id="text10"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column2_1680743895316">
 					                <sap.m:header>
-					                    <sap.m:Text text="Unid. medida" id="text11"/>
+					                    <sap.m:Text text="{i18n>tbColumnUoM}" id="text11"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column3">
 					                <sap.m:header>
-					                    <sap.m:Text text="Preço" id="text12"/>
+					                    <sap.m:Text text="{i18n>tbColumnPrice}" id="text12"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column4">
 					                <sap.m:header>
-					                    <sap.m:Text text="Status" id="text13"/>
+					                    <sap.m:Text text="{i18n>tbColumnStatus}" id="text13"/>
 					                </sap.m:header>
 					            </sap.m:Column>
 					            <sap.m:Column id="column5">
 					                <sap.m:header>
-					                    <sap.m:Text text="Data de criação" id="text14"/>
+					                    <sap.m:Text text="{i18n>tbColumnCreationDate}" id="text14"/>
 					                </sap.m:header>
 					            </sap.m:Column></sap.m:columns></sap.m:Table>
-					</content>
+					</content>				
 					</SemanticPage>
 				</content>
 			</Page>
