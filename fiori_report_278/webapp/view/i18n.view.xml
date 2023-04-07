@@ -1,7 +1,32 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar"
-  controllerName="br.com.cliente.gestao.fiorireport278.controller.i18n" displayBlock="true" id="_controlleri18n">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar" controllerName="br.com.cliente.gestao.fiorireport278.controller.i18n" displayBlock="true" id="_controlleri18n">
   <Page id="i18n" title="{i18n>title}">
     <content>
+     
+    <sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" id="form0">
+     
+        <sap.ui.layout.form:content>
+     
+            <sap.ui.core:Title text="{i18n>titleCustomers}" id="title0"/>
+     
+            <Label text="{i18n>lblCustomer}" id="label0"/>
+     
+            <Input width="100%" id="inpCustomer" placeholder="{i18n>placeholderCustomer}"/>
+     
+            <Label text="{i18n>lblAddress}" id="label1"/>
+     
+            <Input width="100%" id="inpAddress" placeholder="{i18n>placeholderCustomerAddresss}"/>
+     
+            <Label text="{i18n>lblCustomerCity}" width="100%" id="label2"/>
+     
+            <Input xmlns="sap.m" id="inpCity" placeholder="{i18n>placeholderCustomerCity}"/>
+     
+            <Label text="{i18n>lblCustomerState}" width="100%" id="label3"/>
+     
+            <Input xmlns="sap.m" id="inpState" placeholder="{i18n>placeholderCustomerState}"/>
+     
+            <Button xmlns="sap.m" text="{i18n>btnSend}" id="btnSend" icon="sap-icon://action"/></sap.ui.layout.form:content>
+     
+    </sap.ui.layout.form:SimpleForm>
      
     </content>
   </Page>
