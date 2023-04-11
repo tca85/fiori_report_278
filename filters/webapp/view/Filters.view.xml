@@ -10,7 +10,7 @@
                         </Toolbar>
                 </headerToolbar>
                 <content>
-                    <List noDataText="Drop list items here" id="list0" items="{path:'/Products',parameters:{expand:'Category'},filters:[{path:'ProductName',operator:'Contains',value1:'Ch'}]}">
+                    <List noDataText="Drop list items here" id="list0" items="{path:'/Products',filters:[{path:'ProductName',operator:'Contains',value1:'Ch'},{path:'UnitsInStock',operator:'BT',value1:50,value2:95}],sorter:[{path:'UnitsInStock',descending:true}]}">
                     <headerToolbar>
                         <Toolbar width="100%" id="toolbar2">
                             <content>
