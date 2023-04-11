@@ -1,0 +1,38 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="br.com.filters.filters.controller.Filters" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0">
+                <headerToolbar>
+                    <Toolbar id="toolbar1">
+                        <Title text="Filter OData products" id="t1"/>
+                        <ToolbarSpacer id="tb1"/>
+                        <Button icon="sap-icon://settings" id="btn1"/>
+                        </Toolbar>
+                </headerToolbar>
+                <content>
+                    <List noDataText="Drop list items here" id="list0" items="{path:'/Products',parameters:{expand:'Category'}}">
+                    <headerToolbar>
+                        <Toolbar width="100%" id="toolbar2">
+                            <content>
+                                <SearchField xmlns="sap.m" placeholder="Search for ..." id="field0"/>
+                            </content>
+                        </Toolbar>
+                    </headerToolbar>
+                    <items>
+                        <ObjectListItem type="Active" title="Product: {ProductID}" number="{UnitPrice}" numberUnit="eur" intro="{ProductName}" id="item1">
+                            <attributes>
+                                <ObjectAttribute text="{QuantityPerUnit}" id="attribute0" title="Quantity"/>
+                            </attributes>
+                            <firstStatus>
+                                <ObjectStatus text="{Category/CategoryName}" id="status0" title="Category" state="Success"/>
+                            </firstStatus>
+                            <secondStatus>
+                                <ObjectStatus text="{UnitsInStock}" id="status1" title="Stock" state="Error"/>
+                            </secondStatus></ObjectListItem>
+                    </items>
+                    </List>
+                </content>
+                </Panel>
+        </content>
+    </Page>
+</mvc:View>
