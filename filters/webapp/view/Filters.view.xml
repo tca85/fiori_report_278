@@ -10,11 +10,11 @@
                         </Toolbar>
                 </headerToolbar>
                 <content>
-                    <List noDataText="Drop list items here" id="list0" items="{path:'/Products',filters:[{path:'ProductName',operator:'Contains',value1:'Ch'},{path:'UnitsInStock',operator:'BT',value1:50,value2:95}],sorter:[{path:'UnitsInStock',descending:true}]}">
+                    <List noDataText="Drop list items here" id="list0" items="{path:'/Products',parameters:{expand:'Category'}}">
                     <headerToolbar>
                         <Toolbar width="100%" id="toolbar2">
                             <content>
-                                <SearchField xmlns="sap.m" placeholder="Search for ..." id="field0"/>
+                                <SearchField xmlns="sap.m" placeholder="Search for ..." search="onComplexFilter" id="field0"/>
                             </content>
                         </Toolbar>
                     </headerToolbar>
