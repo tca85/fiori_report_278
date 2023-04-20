@@ -10,12 +10,12 @@
 							<fb:filterGroupItems>
 								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="{i18n>fgItemProductID}" labelTooltip="{i18n>fgItemProductTooltip}" visibleInFilterBar="true" groupTitle="{i18n>fgItemProductGroup}" name="Product ID" groupName="Principal" id="fgItemProductGroup">
 									<fb:control>
-										<sap.m:Input width="100%" placeholder="{i18n>fgItemProductPlaceholder}" id="inpProductID"/>
+										<sap.m:Input width="100%" placeholder="{i18n>fgItemProductPlaceholder}" id="productIdInput"/>
 									</fb:control>
 								</fb:FilterGroupItem>
 								<fb:FilterGroupItem xmlns:sap.m="sap.m" label="{i18n>fgItemProductName}" labelTooltip="{i18n>fgItemProductNameTooltip}" visibleInFilterBar="true" groupTitle="{i18n>fgItemProductGroup}" name="Filter Item" groupName="Principal" id="fgItemProductName">
 								    <fb:control>
-								        <sap.m:Input width="100%" placeholder="{i18n>fgItemProductNamePlaceholder}" id="inpProductName"/>
+								        <sap.m:Input width="100%" placeholder="{i18n>fgItemProductNamePlaceholder}" id="productNameInput"/>
 								    </fb:control>
 								</fb:FilterGroupItem>
 							</fb:filterGroupItems>
@@ -29,7 +29,7 @@
 						<Title xmlns="sap.m" text="{i18n>headingTitleSnappedContent}" id="title0_1680138668280"/>
 						</titleSnappedContent>
 					<content>
-					    <sap.m:Table xmlns:sap.m="sap.m" noDataText="{i18n>tbNoData}" id="table1" items="{/Products}">
+					    <sap.m:Table xmlns:sap.m="sap.m" noDataText="{i18n>tbNoData}" id="productsTable" items="{/Products}">
 					        <sap.m:items>
 					            <sap.m:ColumnListItem type="Active" id="item1">
 					            <sap.m:cells>
