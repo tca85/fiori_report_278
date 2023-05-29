@@ -11,12 +11,14 @@ sap.ui.define([
 
         return Controller.extend("br.com.cliente.gestao.fiorireport278.controller.Lista", {
             onInit: function () {
+                console.log
             },
 
             /**
              * Called by the FilterBar search event
              * "This event is fired when the Go button is pressed."
              * https://ui5.sap.com/1.111.1/#/api/sap.ui.comp.filterbar.FilterBar
+             * -------
              * 
              */
             onSearch: function (event) {
